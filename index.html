@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3c4fd56694.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet"><body>
+    <header>
+      <div>
+        <span id="logo"><i class="fa fa-clipboard-list"></i></span>
+        <h1>TodoList</h1>
+      </div>
+      <span id="filter"><i class="fas fa-filter"></i></span>
+  </header>
+  
+  <div id="filterdiv" style="display: none;">
+    <h1>Filter</h1>
+    <select id="filterpage">
+      <option value="No Filter">No Filter</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+      <option value="Done">Done</option>
+      <option value="Not Done">Not Done</option>
+    </select>
+  </div>
+
+  <section id="todos">
+
+    <div class="todo medium notdone" id="todo_0">
+        <div class="options">
+            <input type="checkbox" class="check" id="check_0">
+            <span class="remove" id="del_0"><i class="fas fa-trash-alt"></i></span>
+        </div>
+        <div class="details">
+            <h2>Meeting friend</h2>
+            <p>At restaurant</p>
+        </div>
+        <p class="time">09:30 PM</p>
+    </div>
+    
+  </section>
+
+  <section id="addtodo" style="display: none;">
+    <label for="heading">Enter Heading</label>
+    <input type="text" id="heading" autocomplete="off">
+
+    <label for="description">Enter Description</label>
+    <input type="text" id="description" autocomplete="off">
+    
+    <label for="time">Enter Time</label>
+    <input type="time" id="time" autocomplete="off">
+    
+    <label for="priority">Select Priority</label>
+    <select name="priority" id="priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+    <button>Add</button>
+  </section>
+  <footer>
+      <button id="navadd">Add</button>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
