@@ -58,8 +58,6 @@ $(document).ready(function(){
             else if (priority.value == "Medium") {
                 $('.todo:last').addClass("medium");
             }
-
-            updateLocalStorage($('#todos'))
         }
 
     });
